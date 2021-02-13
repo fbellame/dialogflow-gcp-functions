@@ -1,0 +1,1 @@
+curl -X POST -H "Content-Type: application/json" -d @test.json https://us-central1-southern-unity-304118.cloudfunctions.net/dialogflow-gcp-functions
