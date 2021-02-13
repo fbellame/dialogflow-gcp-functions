@@ -1,0 +1,1 @@
+gcloud functions delete python_gcp_function
