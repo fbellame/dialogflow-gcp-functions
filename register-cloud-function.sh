@@ -1,1 +1,1 @@
-gcloud functions deploy dialogflow-gcp-functions --source https://source.developers.google.com/projects/southern-unity-304118/repos/github_fbellame_dialogflow-gcp-functions/moveable-aliases/main/paths/ --runtime python38 --trigger-http
+gcloud functions deploy python_gcp_function --source https://source.developers.google.com/projects/southern-unity-304118/repos/github_fbellame_dialogflow-gcp-functions/moveable-aliases/main/paths/ --runtime python38 --trigger-http --allow-unauthenticated

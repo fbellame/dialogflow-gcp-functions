@@ -1,6 +1,6 @@
 import json
 
-def hello_world(request):
+def python_gcp_function(request):
     """Responds to any HTTP request.
 
     Args:
