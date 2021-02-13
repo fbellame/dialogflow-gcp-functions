@@ -16,7 +16,7 @@ def hello_world(request):
     elif request_json and 'message' in request_json:
 
         jsonmessage = {
-            "message": "modifier et enregistré via register-cloud-function: " + request_json['message']
+            "message": "message via la cloud function: " + request_json['message']
         }
 
         # convert into JSON:
