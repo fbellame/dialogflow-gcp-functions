@@ -1,5 +1,8 @@
+import json
+
 def hello_world(request):
     """Responds to any HTTP request.
+
     Args:
         request (flask.Request): HTTP request object.
     Returns:
@@ -11,6 +14,12 @@ def hello_world(request):
     if request.args and 'message' in request.args:
         return request.args.get('message')
     elif request_json and 'message' in request_json:
-        return request_json['message']
+
+        jsonmessage = {
+            "reponse": request_json['message']
+        }
+
+        # convert into JSON:
+        return json.dumps(jsonmessage)
     else:
         return f'Hello World!'
